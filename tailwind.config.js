@@ -5,7 +5,10 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      textDecoration: ["focus-visible"],
+      translate: ["motion-safe"],
+    },
   },
   plugins: [],
 };
