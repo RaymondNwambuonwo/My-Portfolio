@@ -9,6 +9,7 @@ import Blogs from "./Components/Blogs";
 import Lessons from "./Components/Lessons";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
+import SinglePost from "./Components/SinglePost";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,6 +42,7 @@ function App() {
         <Route component={About} path="/about" />
         <Route component={Projects} path="/projects" />
         <Route component={Lessons} path="/lessons" />
+        <Route component={SinglePost} path="/post/:slug" />
         <Route component={Blogs} path="/blogs" />
         <Route component={Contact} path="/contact" />
       </Switch>

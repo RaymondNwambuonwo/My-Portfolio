@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import RayResume from "./Resume.pdf";
 
 const NavDrop = ({ isOpen, toggle }) => {
   return (
@@ -24,8 +25,16 @@ const NavDrop = ({ isOpen, toggle }) => {
         Blogs
       </Link>
       <Link to="/contact" className="p-4">
-        Contact Me
+        Contact
       </Link>
+      <a
+        href={RayResume}
+        target="__blank"
+        rel="noopener noreferrer"
+        className="p-4"
+      >
+        Resume
+      </a>
     </div>
   );
 };
