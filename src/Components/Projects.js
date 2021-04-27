@@ -36,7 +36,10 @@ export default function Projects() {
         <section className="flex flex-col gap-4 md:flex-row md:gap-6">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative rounded-lg shadow-xl bg-white p-16">
+              <article
+                className="relative rounded-lg shadow-xl bg-white p-16"
+                key={index}
+              >
                 <h3 className="text-blue-800 text-center text-3xl font-bold mb-2 hover:text-red-700">
                   <a
                     href={project.link}
@@ -48,18 +51,6 @@ export default function Projects() {
                   </a>
                 </h3>
                 <div className="text-gray-500 text-xs text-center space-x-4">
-                  <span>
-                    <strong className="font-bold">Finished on</strong>:{" "}
-                    {new Date(project.date).toLocaleDateString()}
-                  </span>
-                  <span>
-                    <strong className="font-bold">Location</strong>:{" "}
-                    {project.place}
-                  </span>
-                  <span>
-                    <strong className="font-bold">Type</strong>:{" "}
-                    {project.projectType}
-                  </span>
                   <span
                     className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
                     key={index}
@@ -70,6 +61,7 @@ export default function Projects() {
                       className="w-full h-full rounded-r object-cover absolute"
                     />
                   </span>
+                  <h4 className="text-3xl">Project Description</h4>
                   <p className="my-6 text-lg text-gray-700 leading-relaxed">
                     {project.description}
                   </p>
@@ -87,7 +79,6 @@ export default function Projects() {
               </article>
             ))}
         </section>
-        {/* </div> */}
       </section>
     </main>
   );

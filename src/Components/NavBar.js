@@ -43,9 +43,6 @@ const Navbar = ({ toggle }) => {
         <Link to="/projects" className="p-4">
           Projects
         </Link>
-        <Link to="/lessons" className="p-4">
-          Lessons
-        </Link>
         <Link to="/blogs" className="p-4">
           Blogs
         </Link>
@@ -66,18 +63,3 @@ const Navbar = ({ toggle }) => {
 };
 
 export default Navbar;
-
-// <SocialIcon
-//         url="https://www.instagram.com/i.opener_/?hl=en"
-//         className="pl-8"
-//         target="_blank"
-//         fgColor="#fff"
-//         style={{ height: 35, width: 35 }}
-//       />
-// <SocialIcon
-//   url="https://twitter.com/realdapperguy?lang=en"
-//   className="pl-8"
-//   target="_blank"
-//   fgColor="#fff"
-//   style={{ height: 35, width: 35 }}
-// />

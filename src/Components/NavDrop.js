@@ -18,9 +18,6 @@ const NavDrop = ({ isOpen, toggle }) => {
       <Link to="/projects" className="p-4">
         Projects
       </Link>
-      <Link to="/lessons" className="p-4">
-        Lessons
-      </Link>
       <Link to="/blogs" className="p-4">
         Blogs
       </Link>
