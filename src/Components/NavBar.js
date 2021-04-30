@@ -7,16 +7,17 @@ import { FcHome } from "react-icons/fc";
 const Navbar = ({ toggle }) => {
   return (
     <nav
-      className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono bg-gradient-to-t from-gray-300 via-blue-100 to-gray-100"
+      className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono"
       role="navigation"
     >
-      <Link to="/" className="pl-8">
+      <Link to="/" className="pl-8 home">
         <FcHome
           className="text-4xl mx-auto inline-block"
           style={{ color: "#CC3534" }}
         />
       </Link>
 
+      {/* Burger Menu */}
       <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
         <svg
           className="w-8 h-8"
@@ -33,8 +34,8 @@ const Navbar = ({ toggle }) => {
           />
         </svg>
       </div>
-      <div className="pr-8 md:block  hidden">
-        <Link to="/about" className="p-4">
+      <div className="pr-8 md:block hidden">
+        <Link to="/about" className="p-4 hover:underline">
           About
         </Link>
         <Link to="/projects" className="p-4">

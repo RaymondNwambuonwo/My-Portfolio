@@ -39,7 +39,7 @@ export default function Home() {
   return (
     //Hero
     <div>
-      <h1 className="text-center text-6xl">Ray the Dev</h1>
+      <h1 className="text-center text-6xl uppercase">Ray the Dev</h1>
       <div className="container w-full mx-auto flex flex-col-reverse md:flex-row items-center my-12 md:my-24">
         {/* Left Column */}
         <div
@@ -47,11 +47,11 @@ export default function Home() {
           data-aos-duration="1000"
           className="flex flex-col w-full lg:w-1/2 justify-center items-start pt-12 pb-24 px-6"
         >
-          <h1 className="font-bold text-3xl my-4 self-center underline">
+          <h1 className="font-bold text-3xl my-4 self-center underline uppercase">
             Welcome To My Portfolio
           </h1>
-          <p className="mb-4 text-center font-mono leading-loose tracking-widest hover:bg-white">
-            I am a full stack developer specializing in the{" "}
+          <p className="mb-4 text-center font-mono leading-loose tracking-wider hover:bg-white">
+            I am a full stack software developer specializing in the{" "}
             <strong>MERN & JAMstack</strong> technologies. I really enjoy just
             learning new things and applying newfound knowledge in order to
             build new things. I believe no knowledge is useless, you just need
