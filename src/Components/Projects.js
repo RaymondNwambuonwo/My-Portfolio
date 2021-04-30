@@ -33,7 +33,7 @@ export default function Projects() {
     <main className="min-h-screen p-12">
       <section className="container mx-auto">
         <h1 className="text-5xl flex mb-5 justify-center cursive">Projects</h1>
-        <section className="flex flex-col gap-4 md:flex-row md:gap-6">
+        <section className="flex flex-wrap flex-row gap-4 md:flex-col md:gap-6">
           {projectData &&
             projectData.map((project, index) => (
               <article
@@ -45,20 +45,20 @@ export default function Projects() {
                     href={project.link}
                     alt={project.title}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noreferrer"
                   >
                     {project.title}
                   </a>
                 </h3>
                 <div className="text-gray-500 text-xs text-center space-x-4">
                   <span
-                    className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
+                    className="block h-64 relative rounded shadow leading-snug bg-pink-50 border-l-8 border-red-400"
                     key={index}
                   >
                     <img
                       src={project.mainImage.asset.url}
                       alt={project.mainImage.alt}
-                      className="w-full h-full rounded-r object-cover absolute"
+                      className="w-full h-full rounded-r object-scale-down"
                     />
                   </span>
                   <h4 className="text-3xl">Project Description</h4>
