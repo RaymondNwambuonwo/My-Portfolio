@@ -39,18 +39,20 @@ export default function Home() {
   return (
     //Hero
     <div>
-      <h1 className="text-center text-6xl uppercase">Ray the Dev</h1>
-      <div className="container w-full mx-auto flex flex-col-reverse md:flex-row items-center my-12 md:my-24">
+      <h1 className="text-center text-6xl uppercase font-bold filter drop-shadow-2xl ">
+        Ray the Dev
+      </h1>
+      <div className="container w-full mx-auto flex flex-col-reverse md:flex-row items-center md:my-1">
         {/* Left Column */}
         <div
           data-aos="fade-down"
           data-aos-duration="1000"
           className="flex flex-col w-full lg:w-1/2 justify-center items-start pt-12 pb-24 px-6"
         >
-          <h1 className="font-bold text-3xl my-4 self-center underline uppercase">
+          <h1 className="font-bold text-3xl my-4 self-center text-center underline uppercase">
             Welcome To My Portfolio
           </h1>
-          <p className="mb-4 text-center font-mono leading-loose tracking-wider hover:bg-white">
+          <p className="mb-4 homepara text-center font-extrabold text-xl font-mono leading-loose tracking-wider hover:bg-white">
             I am a full stack software developer specializing in the{" "}
             <strong>MERN & JAMstack</strong> technologies. I really enjoy just
             learning new things and applying newfound knowledge in order to
@@ -96,7 +98,7 @@ export default function Home() {
                   <span className="sr-only">Github</span>
                 </a>
                 <a
-                  className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-500 hover:bg-blue-500 rounded-full hover:text-white transition-colors duration-300"
+                  className="text-xl m-1 p-1 sm:m-2 sm:p-2 hover:bg-blue-500 rounded-full hover:text-white transition-colors duration-300"
                   href="https://www.linkedin.com/in/raymondnwambuonwo/"
                   rel="noreferrer"
                   target="_blank"
@@ -125,12 +127,11 @@ export default function Home() {
       </div>
 
       {/* Skills Section */}
-      <h1 className="text-center text-6xl">Skills</h1>
-      <div className="flex flex-wrap sm:flex-row align-center justify-center max-w-2xl mx-auto mt-8">
+      <div className="flex flex-wrap">
         <div
           data-aos="flip-left"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-yellow-600 hover:bg-opacity-60"
+          data-aos-duration="1000"
+          className="m-4 w-40 text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-yellow-600 hover:bg-opacity-60"
         >
           <FaHtml5
             className="text-4xl mx-auto inline-block"
@@ -139,9 +140,9 @@ export default function Home() {
           <p className="text-xl font-semibold mt-4">HTML5</p>
         </div>
         <div
-          data-aos="flip-left"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-blue-500"
+          data-aos="flip-up"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-blue-500"
         >
           <FaCss3Alt
             className="text-4xl mx-auto inline-block"
@@ -151,8 +152,8 @@ export default function Home() {
         </div>
         <div
           data-aos="flip-right"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-yellow-400"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-yellow-400"
         >
           <FaJsSquare
             className="text-4xl mx-auto inline-block"
@@ -161,9 +162,9 @@ export default function Home() {
           <p className="text-xl font-semibold mt-4">JavaScript</p>
         </div>
         <div
-          data-aos="flip-up"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-indigo-700 hover:bg-opacity-60"
+          data-aos="flip-down"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-indigo-700 hover:bg-opacity-60"
         >
           <FaBootstrap
             className="text-4xl mx-auto inline-block"
@@ -172,9 +173,9 @@ export default function Home() {
           <p className="text-xl font-semibold mt-4">Bootstrap</p>
         </div>
         <div
-          data-aos="flip-up"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-blue-200"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-blue-200"
         >
           <FaReact
             className="text-4xl mx-auto inline-block"
@@ -184,26 +185,26 @@ export default function Home() {
         </div>
 
         <div
-          data-aos="flip-up"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-green-300"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-green-300"
         >
           <img className="mx-auto h-9 inline-block" src={Tail} alt="Tailwind" />
           <p className="text-xl font-semibold mt-4">Tailwind</p>
         </div>
 
         <div
-          data-aos="flip-up"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-green-600"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-green-600"
         >
           <img className="mx-auto h-9 inline-block" src={NodeJS} alt="NodeJS" />
           <p className="text-lg font-semibold mt-4">NodeJS</p>
         </div>
         <div
-          data-aos="flip-up"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-yellow-600"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-yellow-600"
         >
           <FaGitAlt
             className="text-4xl mx-auto inline-block"
@@ -212,9 +213,9 @@ export default function Home() {
           <p className="text-xl font-semibold mt-4">Git</p>
         </div>
         <div
-          data-aos="flip-up"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-white"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-white"
         >
           <FaNpm
             className="text-4xl mx-auto inline-block"
@@ -223,17 +224,17 @@ export default function Home() {
           <p className="text-xl font-semibold mt-4">NPM</p>
         </div>
         <div
-          data-aos="flip-up"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-gray-500"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-gray-500"
         >
           <img className="mx-auto h-9 inline-block" src={Linux} alt="Linux" />
           <p className="text-xl font-semibold mt-4">Linux</p>
         </div>
         <div
-          data-aos="flip-up"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-green-800"
+          data-aos="zoom-in-down"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-green-800"
         >
           <img
             className="mx-auto h-9 inline-block"
@@ -243,33 +244,33 @@ export default function Home() {
           <p className="text-xl font-semibold mt-4">MongoDB</p>
         </div>
         <div
-          data-aos="flip-up"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-yellow-500"
+          data-aos="zoom-out"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-yellow-500"
         >
           <img className="mx-auto h-9 inline-block" src={Fire} alt="Firebase" />
           <p className="text-xl font-semibold mt-4">Firebase</p>
         </div>
         <div
-          data-aos="flip-up"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-red-700"
+          data-aos="zoom-out-up"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-red-700"
         >
           <img className="mx-auto h-9 inline-block" src={Sanity} alt="Sanity" />
           <p className="text-xl font-semibold mt-4">Sanity</p>
         </div>
         <div
-          data-aos="flip-up"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-indigo-500"
+          data-aos="zoom-out-down"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-indigo-500"
         >
           <img className="mx-auto h-9 inline-block" src={Heroku} alt="Heroku" />
           <p className="text-xl font-semibold mt-4">Heroku</p>
         </div>
         <div
-          data-aos="flip-up"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-yellow-600"
+          data-aos="zoom-out-right"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-yellow-600"
         >
           <img
             className="mx-auto h-9 inline-block"
@@ -279,9 +280,9 @@ export default function Home() {
           <p className="text-xl font-semibold mt-4">Postman</p>
         </div>
         <div
-          data-aos="flip-up"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-blue-500"
+          data-aos="zoom-out-left"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-blue-500"
         >
           <img
             className="mx-auto h-9 inline-block"
@@ -291,25 +292,25 @@ export default function Home() {
           <p className="text-xl font-semibold mt-4">Netlify</p>
         </div>
         <div
-          data-aos="flip-up"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-gray-400"
+          data-aos="fade-down-right"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-gray-400"
         >
           <img className="mx-auto h-9 inline-block" src={NextJS} alt="NextJS" />
           <p className="text-xl font-semibold mt-4">NextJS</p>
         </div>
         <div
-          data-aos="flip-up"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-yellow-300"
+          data-aos="flip-right"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-yellow-300"
         >
           <img className="mx-auto h-9 inline-block" src={Python} alt="Python" />
           <p className="text-xl font-semibold mt-4">Python</p>
         </div>
         <div
-          data-aos="flip-up"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-white"
+          data-aos="flip-left"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-white"
         >
           <FaDocker
             className="text-4xl mx-auto inline-block"
@@ -318,9 +319,9 @@ export default function Home() {
           <p className="text-xl font-semibold mt-4">Docker</p>
         </div>
         <div
-          data-aos="flip-up"
-          data-aos-duration="3000"
-          className="m-4 w-40 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-gray-300"
+          data-aos="flip-down"
+          data-aos-duration="1000"
+          className="m-4 w-40 mx-auto text-center p-5 rounded-xl border-2 border-gray-300 hover:bg-gray-300"
         >
           <img
             className="mx-auto h-9 inline-block"

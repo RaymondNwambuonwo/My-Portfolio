@@ -6,9 +6,7 @@ const NavDrop = ({ isOpen, toggle }) => {
   return (
     <div
       className={
-        isOpen
-          ? "grid grid-rows-4 text-center items-center bg-yellow-500"
-          : "hidden"
+        isOpen ? "grid grid-rows-4 text-center items-center bg-white" : "hidden"
       }
       onClick={toggle}
     >

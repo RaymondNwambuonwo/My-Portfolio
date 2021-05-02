@@ -7,7 +7,7 @@ import { FcHome } from "react-icons/fc";
 const Navbar = ({ toggle }) => {
   return (
     <nav
-      className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono"
+      className="flex carder2 justify-between items-center h-16 text-black relative shadow-sm font-mono"
       role="navigation"
     >
       <Link to="/" className="pl-8 home">
@@ -38,13 +38,13 @@ const Navbar = ({ toggle }) => {
         <Link to="/about" className="p-4 hover:underline">
           About
         </Link>
-        <Link to="/projects" className="p-4">
+        <Link to="/projects" className="p-4 hover:underline">
           Projects
         </Link>
-        <Link to="/blogs" className="p-4">
+        <Link to="/blogs" className="p-4 hover:underline">
           Blogs
         </Link>
-        <Link to="/contact" className="p-4">
+        <Link to="/contact" className="p-4 hover:underline">
           Contact
         </Link>
         <a

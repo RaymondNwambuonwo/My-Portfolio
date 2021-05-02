@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ravi+Prakash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Noto+Sans+TC:wght@500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,8 +19,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: #f9d29d; */
-  background-color: #f1dfd1;
-  background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+background-color: #bdcad9;
+background-image: linear-gradient(315deg, #bdcad9 0%, #e1dada 74%);
 }
 
 code {
@@ -54,15 +55,21 @@ code {
 
 
 h1{
-  font-family: 'Ravi Prakash',
+font-family: 'Architects Daughter',
+cursive;
+}
+
+.homepara{
+  font-family: 'Architects Daughter',
   cursive;
 }
 
 .carder{
-background-color: #ffcdb2;
-background-image: linear-gradient(315deg, #ffcdb2 0%, #ffb4a2 74%);
+background-color: #BEBEBE;
 }
 
+.carder2{
+background-color: #E9967A;
 
-
+}
 

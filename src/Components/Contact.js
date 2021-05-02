@@ -41,7 +41,7 @@ function Contact() {
 
   return (
     <div>
-      <h2 className="text-center text-5xl">Contact Me</h2>
+      <h1 className="text-center text-5xl">Contact Me</h1>
       <div className="container rounded-lg mx-auto opacity-80 my-20 shadow-inner border-double border-2 border-silver-500 bg-white">
         <div className="p-5 space-y-5 shadow-xl">
           <h4 className="text-center text-3xl">

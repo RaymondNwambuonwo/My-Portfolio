@@ -27,7 +27,10 @@ export default function Blogs() {
   return (
     <main className="min-h-screen p-12">
       <section className="container mx-auto">
-        <h1 className="text-5xl flex justify-center cursive"> Blog Page</h1>
+        <h1 className="text-4xl md:text-4xl flex justify-center cursive">
+          {" "}
+          Blog Page
+        </h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           {" "}
           Daily Blogs

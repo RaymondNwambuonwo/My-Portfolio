@@ -7,7 +7,7 @@ export default function Projects() {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == "project"]{
+        `*[_type == "project"]| order(_createdAt desc){
       title,
       date,
       place,
@@ -25,7 +25,10 @@ export default function Projects() {
           }
     }`
       )
-      .then((data) => setProjectData(data))
+      .then((data) => {
+        setProjectData(data);
+        console.log(data);
+      })
       .catch(console.error);
   }, []);
 
