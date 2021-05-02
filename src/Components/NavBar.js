@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { SocialIcon } from "react-social-icons";
 import RayResume from "./Resume.pdf";
 import { FcHome } from "react-icons/fc";
 

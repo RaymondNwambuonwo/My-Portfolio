@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Ray from "./Images/Ray.png";
 import AOS from "aos";
 
 export default function About() {
