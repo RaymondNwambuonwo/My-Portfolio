@@ -82,10 +82,10 @@ export default function Home() {
 
             {/* card component */}
             <div className="text-center mt-5 mb-12">
-              <p className="text-xl sm:text-2xl font-semibold text-gray-900">
+              <p className="text-xl sm:text-2xl font-semibold font-mono text-gray-900">
                 Raymond Nwambuonwo
               </p>
-              <p className="text-xs sm:text-base text-gray-600 pt-2 pb-4 px-5 w-auto inline-block border-b-2">
+              <p className="text-xs sm:text-base text-gray-600 font-mono pt-2 pb-4 px-5 w-auto inline-block border-b-2">
                 Full-Stack Developer
               </p>
 
