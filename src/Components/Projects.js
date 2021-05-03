@@ -33,14 +33,14 @@ export default function Projects() {
   }, []);
 
   return (
-    <main className="min-h-screen p-12">
-      <section className="container mx-auto">
+    <main className="p-12">
+      <section className="container md:mx-auto">
         <h1 className="text-5xl flex mb-5 justify-center cursive">Projects</h1>
         <section className="flex flex-wrap flex-row gap-4 md:flex-col md:gap-6">
           {projectData &&
             projectData.map((project, index) => (
               <article
-                className="relative rounded-lg shadow-xl bg-white p-16"
+                className="relative rounded-lg shadow-xl bg-white p-10 md:p-16"
                 key={index}
               >
                 <h3 className="text-blue-800 text-center text-3xl font-bold mb-2 hover:text-red-700">
