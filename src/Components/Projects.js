@@ -55,7 +55,7 @@ export default function Projects() {
                 </h3>
                 <div className="text-gray-500 text-xs text-center space-x-4">
                   <span
-                    className="block h-64 relative rounded shadow leading-snug bg-pink-50 border-l-8 border-red-400"
+                    className="block h-64 relative rounded shadow leading-snug bg-yellow-50 border-l-8 border-red-600"
                     key={index}
                   >
                     <img
@@ -64,9 +64,17 @@ export default function Projects() {
                       className="w-full h-full rounded-r object-scale-down"
                     />
                   </span>
-                  <h4 className="text-3xl">Project Description</h4>
-                  <p className="my-6 text-lg text-gray-700 leading-relaxed">
+                  <h4 className="text-3xl font-mono text-gray-900 underline">
+                    Project Description
+                  </h4>
+                  <p className="my-6 text-lg text-gray-700 font-mono leading-relaxed">
                     {project.description}
+                  </p>
+                  <h6 className="text-2xl font-mono text-gray-900 underline">
+                    Technologies Used:
+                  </h6>
+                  <p className="my-6 text-lg text-black font-mono font-bold leading-relaxed">
+                    {project.tags}
                   </p>
                   <a
                     href={project.link}
