@@ -54,15 +54,15 @@ export default function Home() {
           </h1>
           <p className="mb-4 homepara text-center font-extrabold text-xl font-mono leading-loose tracking-wider hover:bg-white">
             I am a full stack software developer specializing in the{" "}
-            <strong>MERN & JAMstack</strong> technologies. I really enjoy
-            learning new things and applying newfound knowledge in order to
-            build and develop new projects. I believe no knowledge is wasted,
-            and you can find use for any information you attain. This concept
-            keeps me open minded and provides me the wherewithal to implement
-            that into my skills as a developer and lifelong learner. Please have
-            a look around my portfolio as it is updated weekly with revisited
-            and new projects as well as blogs about any new technologies I am
-            currently learning and working with.
+            <strong>MERN & JAM</strong> stacks. I really enjoy learning new
+            things and applying newfound knowledge in order to build and develop
+            new projects. I believe knowledge can never be wasted, you just need
+            to find where it is most applicable. I implement this concept to
+            keep me open minded and to grow as a developer and lifelong learner.
+            Please have a look around my portfolio as it is updated weekly with
+            revisited and new projects. You can also take a look at my blog page
+            to find out about any new technologies I am currently learning and
+            working with!
           </p>
         </div>
 
@@ -130,6 +130,9 @@ export default function Home() {
       </div>
 
       {/* Skills Section */}
+      <h1 className="font-bold text-3xl self-center text-center uppercase invisible md:visible">
+        Developer SkillSet
+      </h1>
       <h1 className="font-bold text-3xl my-4 self-center text-center uppercase md:hidden">
         Press a skill
       </h1>

@@ -73,3 +73,12 @@ background-color: #E9967A;
 
 }
 
+.dev{
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
+import ReadMoreReact from "read-more-react";
 
 export default function Projects() {
   const [projectData, setProjectData] = useState(null);
@@ -55,21 +56,32 @@ export default function Projects() {
                 </h3>
                 <div className="text-gray-500 text-xs text-center space-x-4">
                   <span
-                    className="block h-64 relative rounded shadow leading-snug bg-yellow-50 border-l-8 border-red-600"
+                    className="block h-full relative rounded shadow leading-snug bg-white border-l-8 border-red-600"
                     key={index}
                   >
                     <img
                       src={project.mainImage.asset.url}
                       alt={project.mainImage.alt}
-                      className="w-full h-full rounded-r object-scale-down"
+                      className="w-full h-full rounded-r object-contain md:object-scale-down"
                     />
                   </span>
                   <h4 className="text-3xl font-mono text-gray-900 underline">
                     Project Description
                   </h4>
-                  <p className="my-6 text-lg text-gray-700 font-mono leading-relaxed">
+                  {/* <p className="my-6 text-lg text-gray-700 font-mono leading-relaxed">
                     {project.description}
+                  </p> */}
+                  <p className="my-6 text-lg text-gray-700 font-mono leading-relaxed cursor-pointer">
+                    {" "}
+                    <ReadMoreReact
+                      text={project.description}
+                      min={80}
+                      ideal={100}
+                      max={200}
+                      readMoreText="Read More"
+                    />
                   </p>
+
                   <h6 className="text-2xl font-mono text-gray-900 underline">
                     Technologies Used:
                   </h6>
